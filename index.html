@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@reduxjs/toolkit@1.8.5/dist/index.min.js"></script>
+    <title>POSTS</title>
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav class="bg-slate-100 shadow-md">
+      <div
+        class="max-w-7xl mx-auto px-5 lg:px-0 flex justify-between py-3 items-center"
+      >
+        <a href="index.html">
+          <img class="h-10" src="./assets/lws.svg" alt="Learn with Sumit" />
+        </a>
+      </div>
+    </nav>
+
+    <!-- post -->
+
+    <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+      <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+        <div class="flex-1">
+          <a href="#" class="block mt-1">
+            <p class="text-xl font-bold text-gray-900">
+              Boost your conversion rate
+            </p>
+          </a>
+        </div>
+
+        <div class="mt-2 flex items-center text-gray-500">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+            eius ducimus? Expedita praesentium aspernatur nemo dolores
+            necessitatibus illo optio quaerat!
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Realted post -->
+
+    <section
+      class="relative bg-gray-50 pt-8 pb-20 px-4 sm:px-6 lg:pt-16 lg:pb-16 lg:px-8"
+    >
+      <div class="absolute inset-0">
+        <div class="bg-white h-1/3 sm:h-2/3"></div>
+      </div>
+      <div class="relative max-w-7xl mx-auto">
+        <div class="text-center">
+          <h2
+            class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl"
+          >
+            All related Posts
+          </h2>
+        </div>
+        <!-- search -->
+        <div
+          class="border mt-6 border-slate-200 flex items-center w-11/12 lg:w-1/2 mx-auto bg-gray-50 h-12 px-5 rounded-lg text-sm ring-emerald-200"
+        >
+          <input
+            class="outline-none border-none bg-gray-50 h-full w-full mr-2"
+            type="search"
+            name="search"
+            placeholder="Search"
+          />
+          <img
+            class="inline h-6 cursor-pointer"
+            src="./assets/search.svg"
+            alt="Search"
+          />
+        </div>
+
+        <!-- card grid  -->
+        <div
+          class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none"
+        >
+          <!-- single card  -->
+          <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+              <div class="flex-1">
+                <a href="#" class="block mt-1">
+                  <p class="text-xl font-bold text-gray-900">
+                    Boost your conversion rate
+                  </p>
+                </a>
+              </div>
+
+              <div class="mt-2 flex items-center text-gray-900">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Labore, eius ducimus? Expedita praesentium aspernatur nemo
+                  dolores necessitatibus illo optio quaerat!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- single card  -->
+          <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+              <div class="flex-1">
+                <a href="#" class="block mt-1">
+                  <p class="text-xl font-semibold text-gray-900">
+                    Boost your conversion rate
+                  </p>
+                </a>
+              </div>
+
+              <div class="mt-2 flex items-center">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Labore, eius ducimus? Expedita praesentium aspernatur nemo
+                  dolores necessitatibus illo optio quaerat!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section class="pt-6">
+      <div
+        class="max-w-7xl mx-auto px-5 py-6 lg:px-0 flex justify-between gap-2 border-t text-sm text-slate-400"
+      >
+        <div>Copyright 2022 Learn with Sumit.</div>
+        <div>
+          <a
+            href="https://youtube.com/learnwithsumit"
+            target="_blank"
+            rel="noreferrer"
+          >
+            YouTube Channel
+          </a>
+        </div>
+      </div>
+    </section>
+    <script type="module" src="./rtk/index.js"></script>
+  </body>
+</html>
